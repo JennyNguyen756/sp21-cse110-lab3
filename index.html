@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang=”en”>
+    <head>
+        <title>Journal Entries</title>
+        <meta name="author" content="Jenny Nguyen"> 
+        <link rel=icon href=images/favicon.png>
+        <!-- Insert Favicon link -->
+    </head>
+    <body>
+        <main>
+            <!-- Journal Title -->
+            <section>
+                <header>
+                    <h1><b>My Journal Entries</b></h1>
+                    <h3>By: Jenny Nguyen</h3>
+                    <p>Here are some of my journal entries.</p>
+                    <nav>
+                        <a href="#Rose-and-Thorns">Journal Entry 1</a> |
+                        <a href="#Recommended-Anime-Watch-List">Journal Entry 2</a> |
+                        <a href="#My-Day">Journal Entry 3</a> |
+                        </nav>
+                </header>
+            </section>
+
+            <hr>
+
+            <!-- First Journal Entry (2 days ago) -->
+            <section>
+                <!-- Title, Date, Topic -->
+                <div>
+                    <header>
+                        <h1 id="Rose-And-Thorns">Rose and Thorns</h1>
+                        <h2>Date: 2 days ago</h2>
+                        <h3><em>Highlights</em> and <em>Lowlights</em> of my day</h3>
+                    </header>
+                </div>
+                <!-- Journal Entry Content -->
+                <div>
+                    <details>
+                    <summary><strong>Roses:</strong></summary>
+                    <ul>
+                        <li>Woke up today</li>
+                        <li>Ate good food</li>
+                        <li>Finished some work</li>
+                    </ul>
+                    </details>
+                    <details>
+                    <summary><strong>Thorns:</strong></summary>
+                    <ul>
+                        <li>Felt a bit sick</li>
+                        <li>Tripped and ate dirt</li>
+                        <li>Arm hurts a bit</li>
+                    </ul>
+                    </details>
+                </div>
+                <!-- Ending footer -->
+                <footer>
+                    <p>Signed: Jenny Nguyen</p>
+                    <p>Journal Entry 1</p>
+                </footer>
+            </section>
+
+            <hr>
+
+            <!-- Second Journal Entry (Yesterday) -->
+            <section>
+                <div>
+                    <!-- Title, Date, Topic -->
+                    <header>
+                        <h1 id="Recommended-Anime-Watch-List">Recommended Anime Watch List</h1>
+                        <h2>Date: Yesterday</h2>
+                        <h3>List of anime my friend recommended I should watch</h3>
+                    </header>
+                </div>
+                <!-- Journal Entry Content -->
+                <div>
+                    <ol>
+                        <li><span class="italics">Jujutsu Kaisen</span></li>
+                        <li><span class="italics"></span>Your Lie in April</span></li>
+                        <li><span class="italics"></span>Noragami</span></li>
+                    </ol>
+                    <p><b>Bonus:</b> Watch this relaxing piano music video with music from <i>Your Lie in April</i>.</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/H5ohDQ-umHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>Here is one of my favorite anime openings:</p>
+                    <audio controls>
+                        <source src="audio/Demon Slayer Kimetsu no Yaiba - Opening FullGurengeby LiSA.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                      </audio>
+                </div>
+                <!-- Ending footer -->
+                <footer>
+                    <p>Signed: Jenny Nguyen</p>
+                    <p>Journal Entry 2</p>
+                </footer>
+            </section>
+
+            <hr>
+
+            <!-- Third Journal Entry (Today) -->
+            <section>
+                <div>
+                    <!-- Title, Date, Topic -->
+                    <header>
+                        <h1 id="My-Day">My Day</h1>
+                        <h2>Date: Today</h2>
+                        <h3>Some random stuff about my day</h3>
+                    </header>
+                </div>
+                <!-- Journal Entry Content -->
+                <div>
+                    <p>Played with my cousin's dog, Levi, today. <br> Here's a picture of him.</p>
+                    <img src="images/LeviDerp.jpg" alt="Derpy Levi" width="600" height="500">
+                    <p>Here's a video of him.</p>
+                    <video width="320" height="240" controls>
+                        <source src="videos/LeviStressRelief.mp4" type="video/mp4">
+                      </video>
+                    <p>Levi reminded me of this video</p>
+                    <a href="https://www.youtube.com/watch?v=nu77ETGoxAY">Funny Corgi Video!</a>
+
+                </div>
+                <!-- Ending footer -->
+                <footer>
+                    <p>Signed: Jenny Nguyen</p>
+                    <p>Journal Entry 3</p>
+                </footer>
+            </section>
+
+            <hr>
+
+            <!-- Form for new journal entry -->
+            <form>
+                <fieldset>
+                    <legend>New Journal Entry</legend>
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title"><br>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date"><br>
+                    <label for="typeEntry">Select a type of journal entry:</label>
+                    <div>
+                    <input type="radio" id="Rant" name="typeEntry" checked>
+                    <label for="Rant">Rant</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="list" name="typeEntry" value="list">
+                        <label for="List">List</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="P&C" name="typeEntry" value="P&C">
+                        <label for="List">Pros and Cons</label>
+                    </div>
+                    <label for="colors">What colors would you like to use?</label>
+                    <div>
+                    <input type="checkbox" id="red" name="red" checked>
+                    <label for="red">Red</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="green" name="green" checked>
+                        <label for="green">Green</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="blue" name="blue" checked>
+                        <label for="blue">Blue</label>
+                    </div>
+                    <div>
+                        <label for="entry">Journal Entry Content Here:</label>
+                        <textarea id="entry" name="entry" rows="5" cols="50"></textarea>
+                    </div>
+                    <div>
+                        <label for="animal">Choose your spirit animal from the list:</label>
+                        <input list="animals" name="animal" id="animal">
+                        <datalist id="animals">
+                          <option value="Dolphin">
+                          <option value="Porcupine">
+                          <option value="Turtle">
+                          <option value="Panda">
+                        </datalist>
+                    </div>
+                    <label for="footer">Choose a footer option:</label>
+                    <select name="footer" id="footer">
+                        <option value="Name">Only Name</option>
+                        <option value="Journal Entry Number">Only Journal Entry Number</option>
+                        <option value="Both">Both</option>
+                    </select>
+                    <div>
+                    <button type="button">Create Journal Entry!</button>
+                    </div>
+                </fieldset>
+            </form>
+
+        </main>
+    </body>
+</html>
