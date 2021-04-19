@@ -1,0 +1,43 @@
+/* Changes headers within each journal entry */
+h3 {
+    color: #00FFFF;
+}
+
+/* Sets color of date of each journal entry */
+h2 {
+    color: hsl(12, 94%, 40%);
+}
+
+/* add background color to journal entry titles */
+h1 {
+    background-color: rgb(178, 230, 173);
+}
+
+/* Title: My Journal Entries */
+#title {
+    font-size: .5in;
+    border-style: solid;
+    border-color: green;
+    border-width: 1ch; 
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Each Journal Entry Title */
+.entry-title {
+    font-size: 30px;
+    text-decoration: underline wavy green;
+}
+
+/* Sizing of my name */
+#author {
+    font-size: .75cm;
+}
+
+nav{
+    font-size: 2rem;
+}
+
+#entry-intro{
+    font-size: 2ex;
+}

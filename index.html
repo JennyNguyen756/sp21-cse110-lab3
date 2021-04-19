@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <style>
+            h1 {
+                color: blue;
+            }
+        </style>
         <title>Journal Entries</title>
         <meta name="author" content="Jenny Nguyen"> 
         <link rel=icon href=images/favicon.png>
+        <link rel="stylesheet" href="style.css">
         <!-- Insert Favicon link -->
     </head>
     <body>
@@ -11,9 +17,9 @@
             <!-- Journal Title -->
             <section>
                 <header>
-                    <h1><b>My Journal Entries</b></h1>
-                    <h3>By: Jenny Nguyen</h3>
-                    <p>Here are some of my journal entries.</p>
+                    <h1 style="color: #00008B" id="title"><b>My Journal Entries</b></h1>
+                    <h3 style="color:rgb(34, 206, 245)" id="author">By: Jenny Nguyen</h3>
+                    <p id="entry-intro">Here are some of my journal entries.</p>
                     <nav>
                         <a href="#Rose-and-Thorns">Journal Entry 1</a> |
                         <a href="#Recommended-Anime-Watch-List">Journal Entry 2</a> |
@@ -29,7 +35,7 @@
                 <!-- Title, Date, Topic -->
                 <div>
                     <header>
-                        <h1 id="Rose-And-Thorns">Rose and Thorns</h1>
+                        <h1 id="Rose-And-Thorns" class="entry-title">Rose and Thorns</h1>
                         <h2>Date: 2 days ago</h2>
                         <h3><em>Highlights</em> and <em>Lowlights</em> of my day</h3>
                     </header>
@@ -67,7 +73,7 @@
                 <div>
                     <!-- Title, Date, Topic -->
                     <header>
-                        <h1 id="Recommended-Anime-Watch-List">Recommended Anime Watch List</h1>
+                        <h1 id="Recommended-Anime-Watch-List" class="entry-title">Recommended Anime Watch List</h1>
                         <h2>Date: Yesterday</h2>
                         <h3>List of anime my friend recommended I should watch</h3>
                     </header>
@@ -98,7 +104,7 @@
                 <div>
                     <!-- Title, Date, Topic -->
                     <header>
-                        <h1 id="My-Day">My Day</h1>
+                        <h1 id="My-Day" class="entry-title">My Day</h1>
                         <h2>Date: Today</h2>
                         <h3>Some random stuff about my day</h3>
                     </header>
