@@ -1,3 +1,6 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
 /* Changes headers within each journal entry */
 h3 {
     color: #00FFFF;
@@ -15,29 +18,102 @@ h1 {
 
 /* Title: My Journal Entries */
 #title {
+    display: block;
     font-size: .5in;
     border-style: solid;
     border-color: green;
     border-width: 1ch; 
     border-radius: 10px;
     text-align: center;
+    position: static;
 }
 
 /* Each Journal Entry Title */
 .entry-title {
+    display: inline;
     font-size: 30px;
     text-decoration: underline wavy green;
+    text-align: center;
 }
 
 /* Sizing of my name */
 #author {
     font-size: .75cm;
+    height: 10vh;
+    width: 10vw;
+    max-width: 100rem;
+    min-width: 100rem;
+    position: relative;
 }
 
+/* Change size of nav bar */
 nav{
     font-size: 2rem;
 }
 
+/* change size of the introduction description */
 #entry-intro{
     font-size: 2ex;
+}
+
+section{
+    margin:auto;
+}
+
+div {
+    margin: 50px 0px 0px 0px;
+}
+
+/* changed footer distance from rest of text */
+footer{
+    margin-top: 100px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+p{
+    padding: 10px 10px 10px 10px;
+
+}
+
+a,img {
+    padding-top: 100px;
+    padding-left: 0px;
+    padding-bottom: 100px;
+    padding-right: 0px;
+}
+
+/* media query */
+@media screen and (max-width: 800px) {
+ h1 {
+     background-color: lightgreen;
+ }
+  }
+
+  summary:hover{
+      background-color: pink;
+  }
+  
+  summary:active{
+      background-color: red;
+  }
+
+  /* active selector */
+  a:active{
+      color: blue;
+  }
+
+form {
+    display: flex;
+    justify-content: center;
+    align-self: auto;
+    flex-direction: row;
+}
+
+#second-entry {
+    display:grid;
+    grid-gap: 50px 100px;
+    grid-template-columns: 50em 50em 50em 50em;
+    grid-template-rows: auto;
 }
