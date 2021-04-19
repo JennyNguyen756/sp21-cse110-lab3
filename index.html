@@ -8,6 +8,8 @@
         </style>
         <title>Journal Entries</title>
         <meta name="author" content="Jenny Nguyen"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel=icon href=images/favicon.png>
         <link rel="stylesheet" href="style.css">
         <!-- Insert Favicon link -->
@@ -41,7 +43,7 @@
                     </header>
                 </div>
                 <!-- Journal Entry Content -->
-                <div>
+                <div id="roses">
                     <details>
                     <summary><strong>Roses:</strong></summary>
                     <ul>
@@ -69,7 +71,7 @@
             <hr>
 
             <!-- Second Journal Entry (Yesterday) -->
-            <section>
+            <section id="second-entry">
                 <div>
                     <!-- Title, Date, Topic -->
                     <header>
@@ -134,8 +136,8 @@
             <form>
                 <fieldset>
                     <legend>New Journal Entry</legend>
-                    <label for="title">Title:</label>
-                    <input type="text" id="title" name="title"><br>
+                    <label for="newtitle">Title:</label>
+                    <input type="text" id="newtitle" name="title"><br>
                     <label for="date">Date:</label>
                     <input type="date" id="date" name="date"><br>
                     <label>Select a type of journal entry:</label>
