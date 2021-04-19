@@ -1,3 +1,7 @@
+* {
+    background-color: lavender;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -48,7 +52,7 @@ h1 {
 
 /* Change size of nav bar */
 nav{
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 /* change size of the introduction description */
@@ -78,9 +82,9 @@ p{
 }
 
 a,img {
-    padding-top: 100px;
+    padding-top: 10px;
     padding-left: 0px;
-    padding-bottom: 100px;
+    padding-bottom: 10px;
     padding-right: 0px;
 }
 
@@ -111,9 +115,34 @@ form {
     flex-direction: row;
 }
 
+/* grid, a different way of showing journal entry */
 #second-entry {
     display:grid;
     grid-gap: 50px 100px;
     grid-template-columns: 50em 50em 50em 50em;
     grid-template-rows: auto;
+}
+
+[id~="entry"] {
+    border: 5px solid red;
+}
+
+div h1 {
+    background-color: aquamarine;
+}
+
+footer > p {
+    color: purple;
+}
+
+h2 + h3 {
+    border: 5px solid black;
+}
+
+h1 ~ h2 {
+    border: 5px solid orange;
+}
+
+h1.entry-title {
+    background-color: antiquewhite;
 }
